@@ -43,3 +43,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_RESYNC_ENABLE
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
+/* Enabling RGB Sleep to turn off RGB when host sleeps */
+
+#define RGBLIGHT_SLEEP
