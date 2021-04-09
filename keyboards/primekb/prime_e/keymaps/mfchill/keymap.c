@@ -23,12 +23,12 @@ enum primee_layers {
   _ADJUST
 };
 
+
 #define CTLESC  MT(MOD_LCTL, KC_ESC)
 #define LWRSPC  LT(_LOWER, KC_SPC)
 #define RSEENT  LT(_RAISE, KC_BSPC)
 #define MOADJ   MO(_ADJUST)
 #define GAME    TG(_GAME)
-
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DEFAULT] = LAYOUT(
@@ -65,7 +65,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_TRNS,   KC_TRNS,   KC_TRNS,   KC_TRNS,   KC_TRNS,    KC_TRNS,           KC_TRNS,   KC_TRNS,    KC_TRNS,   KC_TRNS,   KC_TRNS,   KC_TRNS,   KC_TRNS,
 		RESET,     KC_TRNS,                         KC_TRNS,    KC_TRNS,	       KC_TRNS,   KC_TRNS,                                     KC_TRNS,   KC_TRNS
     ),
-
 };
 
 void matrix_init_user(void) {
@@ -81,6 +80,7 @@ void matrix_init_user(void) {
 }
 
 //function for layer indicator LED
+
 layer_state_t layer_state_set_user(layer_state_t state) {
     //writePinLow(B1);
     //writePinLow(B2);
